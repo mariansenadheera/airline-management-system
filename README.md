@@ -43,15 +43,15 @@ Update the connection string in App.config if required.
 5️⃣ Run the project from Visual Studio.
 
 ## UI Screenshots
-Login - ![login](https://github.com/user-attachments/assets/4b222304-fd23-4e5f-859e-05fbfe4904c9)
-Home - ![home](https://github.com/user-attachments/assets/28f5881e-fef0-499f-96b4-b20325958c7a)
-Passenger Registration - ![passenger_registration](https://github.com/user-attachments/assets/24c77beb-ba28-4c0c-a588-800b0102e222)
+![login](https://github.com/user-attachments/assets/4b222304-fd23-4e5f-859e-05fbfe4904c9)
+![home](https://github.com/user-attachments/assets/28f5881e-fef0-499f-96b4-b20325958c7a)
+![passenger_registration](https://github.com/user-attachments/assets/24c77beb-ba28-4c0c-a588-800b0102e222)
 ![passenger_registered](https://github.com/user-attachments/assets/40fe5910-bb83-4037-9c3e-c0178ec2ef11)
-View Passenger- ![view_passengers](https://github.com/user-attachments/assets/952341cc-c0d9-42ef-b02c-cd4eb1e4061f)
-Flight Registeration- ![image](https://github.com/user-attachments/assets/35dfb5af-b60f-4996-a5ec-a9df2b8b1f73)
-View Flights- ![view_flights](https://github.com/user-attachments/assets/78044ff5-8ad4-4211-bb2c-4529e205b308)
-Ticket Booking - ![ticket_booking](https://github.com/user-attachments/assets/fbdc5041-0fc3-4e67-92b2-a39f3e5d355b)
-Reports - ![reports](https://github.com/user-attachments/assets/3edc8c85-f2de-4507-9f1c-d95edd859830)
+![view_passengers](https://github.com/user-attachments/assets/952341cc-c0d9-42ef-b02c-cd4eb1e4061f)
+![image](https://github.com/user-attachments/assets/35dfb5af-b60f-4996-a5ec-a9df2b8b1f73)
+![view_flights](https://github.com/user-attachments/assets/78044ff5-8ad4-4211-bb2c-4529e205b308)
+![ticket_booking](https://github.com/user-attachments/assets/fbdc5041-0fc3-4e67-92b2-a39f3e5d355b)
+![reports](https://github.com/user-attachments/assets/3edc8c85-f2de-4507-9f1c-d95edd859830)
 
 
 
