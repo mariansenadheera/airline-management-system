@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE6C2E4E-73E4-4FC0-9AEC-F4BF34C26367}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Airline</RootNamespace>
+    <AssemblyName>Airline</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cancellation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cancellation.Designer.cs">
+      <DependentUpon>Cancellation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Flight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flight.Designer.cs">
+      <DependentUpon>Flight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightCancellations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightCancellations.Designer.cs">
+      <DependentUpon>FlightCancellations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlightReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FlightReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightReportView.Designer.cs">
+      <DependentUpon>FlightReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flight_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flight_View.Designer.cs">
+      <DependentUpon>Flight_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger.Designer.cs">
+      <DependentUpon>Passenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassengerRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassengerRegistration.Designer.cs">
+      <DependentUpon>PassengerRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassengerReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PassengerReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PassengerReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassengerReportView.Designer.cs">
+      <DependentUpon>PassengerReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Record_Flight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Record_Flight.Designer.cs">
+      <DependentUpon>Record_Flight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report.Designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketCancellation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketCancellation.Designer.cs">
+      <DependentUpon>TicketCancellation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets.Designer.cs">
+      <DependentUpon>Tickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ticket_booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ticket_booking.Designer.cs">
+      <DependentUpon>ticket_booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPassengers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPassengers.Designer.cs">
+      <DependentUpon>ViewPassengers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cancellation.resx">
+      <DependentUpon>Cancellation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flight.resx">
+      <DependentUpon>Flight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightCancellations.resx">
+      <DependentUpon>FlightCancellations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FlightReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightReportView.resx">
+      <DependentUpon>FlightReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flight_View.resx">
+      <DependentUpon>Flight_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger.resx">
+      <DependentUpon>Passenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassengerRegistration.resx">
+      <DependentUpon>PassengerRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassengerReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PassengerReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassengerReportView.resx">
+      <DependentUpon>PassengerReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Record_Flight.resx">
+      <DependentUpon>Record_Flight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketCancellation.resx">
+      <DependentUpon>TicketCancellation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets.resx">
+      <DependentUpon>Tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ticket_booking.resx">
+      <DependentUpon>ticket_booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPassengers.resx">
+      <DependentUpon>ViewPassengers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
