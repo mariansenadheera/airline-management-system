@@ -42,7 +42,7 @@ Update the connection string in App.config if required.
 
 5️⃣ Run the project from Visual Studio.
 
-## UI Screenshots
+## Screenshots
 ![login](https://github.com/user-attachments/assets/4b222304-fd23-4e5f-859e-05fbfe4904c9)
 ![home](https://github.com/user-attachments/assets/28f5881e-fef0-499f-96b4-b20325958c7a)
 ![passenger_registration](https://github.com/user-attachments/assets/24c77beb-ba28-4c0c-a588-800b0102e222)
